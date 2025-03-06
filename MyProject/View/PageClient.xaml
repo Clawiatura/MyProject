@@ -1,0 +1,24 @@
+﻿<!-- PersonalAccountWindow.xaml -->
+<Window x:Class="YourNamespace.PersonalAccountWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        
+        Title="Личный кабинет" Height="350" Width="200">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Данные">
+                <!-- Здесь разместите элементы для отображения данных пользователя -->
+                <TextBlock Text="Данные пользователя" />
+            </TabItem>
+            <TabItem Header="Бонусы">
+                <!-- Здесь разместите элементы для отображения бонусов -->
+                <TextBlock Text="Бонусы" />
+            </TabItem>
+            <TabItem Header="Заказы">
+                <!-- Здесь разместите элементы для отображения заказов -->
+                <TextBlock Text="Заказы" />
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
+

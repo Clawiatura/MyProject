@@ -1,0 +1,57 @@
+﻿<Page x:Class="MyProject.View.PageJoinUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MyProject.View"
+      mc:Ignorable="d" 
+      Background="PapayaWhip"
+      d:DesignHeight="400" d:DesignWidth="400"
+      Title="PageRegistr">
+
+    <Grid>
+        <Button x:Name="CloseButton" Content="X" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,5,0" Width="20" Height="20" Click="CloseButton_Click"/>
+        
+        <StackPanel VerticalAlignment="Top">
+            <Image Width="33" Height="43" Margin="0,0,0,20" Source="C:\Users\maksi\source\repos\MyProject\MyProject\Photo\Project.png" HorizontalAlignment="Center"/>
+            <TextBox Width="250" Margin="0,0,0,10" />
+            <TextBox Width="250" Margin="0,0,0,10" />
+            
+            <Button x:Name="LogginButton" Width="250" Height="40" Background="Purple" Foreground="White" Content="Войти" Margin="0,0,0,20" Click="Button_Click"/>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Hyperlink>Нет профиля? Зарегистрируйтесь, это легко!</Hyperlink>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10">
+                или войдите с помощью
+            </TextBlock>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Button Width="40" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\maksi\source\repos\MyProject\MyProject\Photo\odnoklasniki.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+                <Button Width="40" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\maksi\source\repos\MyProject\MyProject\Photo\vk.png" Stretch="Fill"/>
+                    </Button.Background>
+                </Button>
+                <Button Width="40" Height="40">
+                    <Button.Background>
+                        <ImageBrush ImageSource="C:\Users\maksi\source\repos\MyProject\MyProject\Photo\телега.png" Stretch="Fill"/>
+                    </Button.Background>
+                    
+                </Button>
+
+            </StackPanel>
+            <TextBlock HorizontalAlignment="Center" Margin="0,0,0,10">
+                <Hyperlink>Политика обработки персональных данных</Hyperlink>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center" Margin="0,0,0,10">
+                Нажимая "Зарегистрироваться", вы соглашаетесь с <Hyperlink>пользовательским соглашением</Hyperlink>.
+            </TextBlock>
+            <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" />
+            
+        </StackPanel>
+    </Grid>
+</Page>
+
