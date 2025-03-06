@@ -48,6 +48,35 @@ namespace YourNamespace // Замените на ваше пространств
         {
             MainFrame.Navigate(new HelpPage());
         }
+
+        private void TextBox_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && textBox.Foreground == Brushes.Gray)
+            {
+                textBox.Text = "";
+                textBox.Foreground = Brushes.Black;
+                textBox.Opacity = 1.0;
+            }
+        }
+
+        private void TextBox_LostFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox textBox = sender as TextBox;
+            if (textBox != null && string.IsNullOrWhiteSpace(textBox.Text))
+            {
+                if (textBox.Name == "FromTextBox")
+                {
+                    textBox.Text = "Откуда";
+                }
+                else if (textBox.Name == "ToTextBox")
+                {
+                    textBox.Text = "Куда";
+                }
+                textBox.Foreground = Brushes.Gray;
+                textBox.Opacity = 0.5;
+            }
+        }
     }
 }
 
