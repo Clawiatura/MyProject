@@ -163,32 +163,32 @@
     <Resource Include="Photo\Project.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="odnoklasniki.png">
+    <EmbeddedResource Include="Resources\odnoklasniki.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Photo\Cifra.png">
+    <EmbeddedResource Include="Resources\Cifra.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Vk.png">
+    <EmbeddedResource Include="Resources\Vk.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Регистрация.png">
+    <EmbeddedResource Include="Resources\Регистрация.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="телега.png">
+    <EmbeddedResource Include="Resources\телега.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Photo\1.jpg">
+    <EmbeddedResource Include="Resources\1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>
